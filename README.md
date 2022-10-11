@@ -4,6 +4,11 @@ This is the official implementation based on paddlepaddle of the paper [Singular
 
 Authors: Yanpeng Sun^, Qiang Chen^, Xiangyu He^, Jian Wang, Haocheng Feng, Junyu Han, Errui Ding, Jian Cheng, [Zechao Li](https://zechao-li.github.io/), Jingdong Wang
 
+<div align="center">
+<img src="img/model.jpg" width="60%" height="60%"/><br/>
+</div>
+
+
 ## Usage
 
 This tool can not only decompose and rebuild the model, but also decompose and rebuild a layer individually.
