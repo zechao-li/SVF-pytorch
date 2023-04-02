@@ -51,7 +51,7 @@ class SVD_Conv2d(nn.Lyaer):
         factory_kwargs = {'device': device, 'dtype': dtype}
         self.conv_U = nn.Conv2d(rank, out_channels, (1, 1), (1, 1), 0, (1, 1), 1, bias)
         self.conv_V = nn.Conv2d(in_channels, rank, kernel_size, stride, padding, dilation, groups, False)
-        self.vector_S = nn.Parameter(paddle.empty((1, rank, 1, 1), **factory_kwargs))
+        self.vector_S = nn.Parameter(torch.empty((1, rank, 1, 1), **factory_kwargs))
 
     def forward(self, x):
         x = self.conv_V(x)
